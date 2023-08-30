@@ -2,9 +2,11 @@
     font-family: poppins;
 }
 
+.body {}
+
 .Home {
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     background-color: black;
 
 }
@@ -22,6 +24,7 @@
 #section1 {
     height: 100vh;
     width: 100%;
+
 }
 
 .container {
@@ -30,17 +33,62 @@
     justify-content: center;
 }
 
-.profile-pic{
+.profile-pic {
     width: 600px;
+}
+
+#section2 {
+    height: 100vh;
+    width: 100%;
+}
+
+.hello .btn:hover {
+    background-color: whitesmoke !important;
+    color: rgb(0, 234, 255);
+    text-shadow: 2px 2px 2px #000000;
+}
+
+.left-about .btn:hover {
+    background-color: whitesmoke !important;
+    color: rgb(0, 234, 255);
+    text-shadow: 2px 2px 2px #000000;
+}
+.container-portfolio .btn:hover {
+    background-color: whitesmoke !important;
+    color: rgb(0, 234, 255);
+    text-shadow: 2px 2px 2px #000000;
+}
+.fa-brands:hover {
+    transform: scale(1.3);
+    transition: transform .5s;
+}
+
+#section3 {
+    height: 100vh;
+    width: 100%;
+}
+
+#section4 {
+    height: 100vh;
+    width: 100%;
+}
+.contact .fa-solid{
+    color: rgb(0, 234, 255);
+    text-shadow: 2px 2px 2px #000000;
+}
+#section5 {
+    height: auto;
+    width: 100%;
+
 }
 
 
 /* /* for mobile devices with lower than 576px width */
 
-@media (max-width:575.98px) {
+@media (min-width:320px) and (max-width:767.98px) {
     #section1 {
         width: 100%;
-        min-height: 100vh;
+        height: 70vh;
     }
 
     .profile-pic {
@@ -59,7 +107,7 @@
         color: whitesmoke;
         font-size: 30px;
         margin-top: 10px;
-        margin-left: 10%;
+        margin-left: 40px;
     }
 
     .container {
@@ -69,23 +117,235 @@
         flex-direction: column;
     }
 
-    .experiences {
-        margin-top: 30px;
+    .hello .btn {
+        margin-top: 20px;
+        padding: 5px !important;
+        font-size: 12px;
+        margin-left: 10px;
     }
 
-    .work {
-        list-style-type: none;
+    .fa-brands {
+        margin-top: 20px;
+        color: rgb(0, 234, 255);
     }
 
-    .work li {
+    .socials {
+        margin-left: 70px;
+    }
+
+    .main-buttons {
+        display: flex;
+        margin-right: 10px;
+    }
+
+    #section2 {
+        width: 100%;
+        height: 80vh;
+    }
+
+    .about-me {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .left-about {
+        font-size: 10px;
+        text-align: justify;
+        width: 90%;
+        padding-top: 10px;
+
+    }
+
+    .container-about {
+        padding-top: 10vh;
+    }
+
+    .right-about img {
+        height: 200px;
+        width: auto;
+        border-radius: 20px;
+        border-color: rgb(0, 234, 255);
+        border-style: inset;
+    }
+
+    .left-about .btn {
+        margin-top: 10px;
+        padding: 5px !important;
+        font-size: 12px;
+
+    }
+
+    .about-links {
+        margin-top: 20px;
+    }
+
+    .about-links .see-more {
+        color: rgb(0, 234, 255);
+        margin-left: 40px;
+    }
+
+    #section3 {
+        height: auto;
+    }
+
+    .container-cards {
+        flex-wrap: wrap;
+    }
+
+    .card-title {
+        color: rgb(0, 234, 255) !important;
         font-size: 15px;
+        font-weight: 500;
+    }
+
+    .card-text {
+        font-size: 10px;
+    }
+
+    .container-cards2 {
+        flex-wrap: wrap;
+    }
+
+    .card .fa-solid {
+        font-size: 30px;
+        text-shadow: 2px 2px 6px #000000;
+    }
+
+    .container-service .m-5 {
+        margin: 1rem !important;
+    }
+
+    .container-cards .card {
+        width: 15rem !important;
+    }
+
+    .container-cards2 .card {
+        width: 15rem !important;
+    }
+
+    
+    #section4 {
+        height: auto;
+    }
+
+    .container-portfolio h2 {
+        font-size: 30px;
+        font-weight: 500 !important;
+        margin-top: 10vh;
+    }
+
+    .project1 {
+        margin: 6% 0 0 36%;
+        position: relative;
+        width: 280px;
+        overflow: visible;
+    }
+
+    .project1 img {
+        display: block;
+        width: 100%;
+        height: 180px;
+        
+    }
+    .overlay{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.75);
+        width: 100%;
+        height: 0;
+        transition: .5s ease;
+        overflow: hidden;
+    }
+    .project1:hover .overlay{
+        height: 100%;
+    }
+    .main-portfolio{
+        display: flex;
+        align-items: center;
+        justify-content:center ;
+        flex-direction: column;
+    }
+    .portfolio-content, .portfolio-content2, .portfolio-content3{
+        margin-left: -150px;
+        margin-right: 50px;
+        margin-bottom: 15px;
+    }
+    .overlay h1{
+        color: rgb(0, 234, 255);
+        text-align: center;
+        margin-top: 40px;
+    }
+    .overlay p{
+        font-size: 10px;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .container-portfolio .btn {
+        margin-top: 5px !important;
+        padding: 2px 10px !important;
+        font-size: 12px;
+        
+    }
+    .call-action{
+        margin-top: 50px;
+        border-top: 3px solid rgb(0, 234, 255);
+        border-bottom: 3px solid rgb(0, 234, 255);
+    }
+
+    .call-action h3{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: rgb(0, 234, 255);
+        font-size: 15px;
+    }
+
+    .call-action h1{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+    .call-action .btn{
+        margin-bottom: 20px;
+        padding: 3px 5px !important;
+        font-size: 10px;
+        margin-left: 10px;
+    }
+    .contact .contact-info{
+        text-decoration: none;
+        font-size: 12px;
+        color: white;
+        margin-left: 10px;
+    }
+
+    .contact-us{
+        font-size: 30px;
+        margin-top: 50px;
+    }
+
+    .d-grid .btn{
+        margin-bottom: 20px;
+        padding: 10px 20px !important;
+        font-size: 10px;
+        margin-left: 10px;
     }
 }
 
 @media (min-width:768px) {
     #section1 {
         width: 100%;
-        min-height: 100vh;
+        height: 70vh;
+    }
+
+    #section2 {
+        width: 100%;
+        height: 70vh;
+    }
+    #section3 {
+        width: 100%;
+        height: 80vh;
     }
     .profile-pic {
         width: 300px;
@@ -105,30 +365,245 @@
         margin-top: 10px;
         margin-left: 40px;
     }
-    .experiences {
+
+    .hello .btn {
+        margin-top: 20px;
+        padding: 10px 10px !important;
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    .fa-brands {
+        margin-top: 20px;
+        color: rgb(0, 234, 255);
+    }
+
+    .socials {
+        margin-left: 110px;
+    }
+
+    .main-buttons {
+        display: flex;
+        margin-left: 40px;
+    }
+
+    .about-me {
+        display: flex;
+    }
+
+    .left-about {
+        font-size: 12px;
+        text-align: justify;
+        margin-top: 20px;
+        width: 100%;
+
+    }
+
+    .container-about {
+        display: block;
+        padding-top: 10vh;
+    }
+
+    .container-about h2 {
+        font-size: 30px;
+    }
+
+    .right-about img {
+        height: 250px;
+        width: auto;
+        margin-left: 20px;
+        border-radius: 20px;
+        border-color: rgb(0, 234, 255);
+        border-style: inset;
+    }
+
+    .left-about .btn {
+        margin-top: 10px;
+        padding: 10px 10px !important;
+        font-size: 12px;
+    }
+
+    .about-links {
+        margin-top: 10px;
+    }
+
+    .about-links .see-more {
+        color: rgb(0, 234, 255);
+        margin-left: 100px;
+    }
+
+    .container-service h2 {
+        font-size: 40px;
+        font-weight: 500 !important;
+        margin-bottom: 40px;
+    }
+
+    .card-title {
+        color: rgb(0, 234, 255) !important;
+        font-size: 17px;
+        font-weight: 500;
+    }
+
+    .card-text {
+        font-size: 10px;
+    }
+
+    .container-cards .card {
+        width: 12rem !important;
+    }
+
+    .container-cards2 .card {
+        width: 12rem !important;
+    }
+
+    .container-service {
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        padding-top: 10vh;
+    }
+
+    .card .fa-solid {
+        font-size: 50px;
+        text-shadow: 2px 2px 6px #000000;
+    }
+
+    .container-service .m-5 {
+        margin: 15px !important;
+    }
+
+    .card .py-3 {
+        font-size: 65px;
+    }
+    #section4 {
+        height: auto;
+    }
+    .container-portfolio h2 {
+        font-size: 40px;
+        font-weight: 500 !important;
+        margin-top: 50px;
+    }
+    .container-portfolio {
+        padding-top: 5vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .project1 {
+        margin: 6% 0 0 36%;
+        position: relative;
+        width: 500px;
+        overflow: visible;
+    }
+
+    .project1 img {
+        display: block;
+        width: 100%;
+        height: 300px;
+        
+    }
+    .overlay{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.75);
+        width: 100%;
+        height: 0;
+        transition: .5s ease;
+        overflow: hidden;
+    }
+    .project1:hover .overlay{
+        height: 100%;
+    }
+    .main-portfolio{
+        display: flex;
+        align-items: center;
+        justify-content:center ;
+        flex-direction: column;
+    }
+    .portfolio-content, .portfolio-content2, .portfolio-content3{
+        margin-left: -300px;
+        margin-right: 50px;
+        margin-bottom: 15px;
+    }
+    .overlay h1{
+        color: rgb(0, 234, 255);
+        text-align: center;
+        margin-top: 40px;
+    }
+    .overlay p{
+        font-size: 10px;
         margin-top: 30px;
+        text-align: center;
+    }
+    .container-portfolio .btn {
+        margin-top: 5px !important;
+        padding: 5px 15px !important;
+        font-size: 12px;
+        
+    }
+    .call-action{
+        margin-top: 50px;
+        border-top: 3px solid rgb(0, 234, 255);
+        border-bottom: 3px solid rgb(0, 234, 255);
+    }
+
+    .call-action h3{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: rgb(0, 234, 255);
+        font-size: 20px;
+    }
+
+    .call-action h1{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 50px;
+    }
+    .call-action .btn{
+        margin-bottom: 20px;
+        padding: 5px 15px !important;
+        font-size: 10px;
+        margin-left: 10px;
+    }
+    .contact .contact-info{
+        text-decoration: none;
+        font-size: 15px;
+        color: white;
+        margin-left: 10px;
+    }
+
+    .contact-us{
+        font-size: 40px;
+    }
+
+    .d-grid .btn{
         margin-left: 30px;
     }
-
-    .work {
-        list-style-type: none;
-    }
-
-    .work li {
-        font-size: 20px;
+    .fluid-container{
+        padding-top: 30px;
     }
 }
 
-@media (min-width:1200px){
+
+@media (min-width:1200px) {
     #section1 {
         width: 100%;
-        min-height: 100vh;
+        min-height: 80vh;
     }
+
+    #section2 {
+        width: 100%;
+        height: 80vh;
+    }
+
     .container {
         display: flex;
         align-items: center;
         justify-content: left;
     }
+
     .profile-pic {
         width: 400px;
         margin-right: 100px;
@@ -147,17 +622,235 @@
         margin-top: 10px;
         margin-left: 60px;
     }
-    .experiences {
+
+    .hello .btn {
+        font-weight: 800;
+        font-size: 15px;
+        margin-top: 20px;
+        padding: 10px 20px !important;
+    }
+
+    .fa-brands {
+        margin-top: 20px;
+        color: rgb(0, 234, 255);
+    }
+
+    .socials {
+        margin-left: 250px;
+    }
+
+    .main-buttons {
+        margin-left: 140px;
+    }
+
+    .right-about img {
+        height: 400px;
+        width: auto;
+        border-radius: 20px;
+        border-color: rgb(0, 234, 255);
+        border-style: inset;
+        padding-top: 40px;
+
+    }
+
+    .container-about {
+        display: block;
+        padding-top: 20vh;
+    }
+
+    .container-about h2 {
+        font-size: 50px;
+    }
+
+    .left-about {
+        font-size: 20px;
+        text-align: justify;
+        margin-top: 60px;
+        width: 100%;
+        margin-right: 20px;
+    }
+
+    .left-about .btn {
+        margin-left: 30px;
+        font-weight: 800;
+        font-size: 15px;
+        padding: 10px 20px !important;
+
+    }
+
+    .about-links {
+        margin-top: 40px;
+    }
+
+    .about-links .see-more {
+        color: rgb(0, 234, 255);
+        margin-left: 50%;
+    }
+
+    #section3 {
+        padding-top: 5vh;
+        height: 100vh;
+    }
+
+    .container-service {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-service h2 {
+        font-size: 60px;
+        font-weight: 500 !important;
+    }
+
+    .card-title {
+        color: rgb(0, 234, 255) !important;
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    .card-text {
+        font-size: 15px;
+    }
+
+    .container-cards2 {
+        margin-top: -55px !important;
+    }
+
+    .card .fa-solid {
+        text-shadow: 2px 2px 6px #000000
+    }
+
+    .container-cards .card {
+        width: 18rem !important;
+    }
+
+    .container-cards2 .card {
+        width: 18rem !important;
+    }
+
+    .container-service .m-5 {
+        margin: 60px !important;
+    }
+
+    #section4 {
+        padding-top: 10vh;
+        height: 150vh !important;
+    }
+    .container-portfolio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .container-portfolio h2 {
+        font-size: 60px;
+        font-weight: 500 !important;
+
+    }
+
+    .project1 {
+        margin: 6% 0 0 36%;
+        position: relative;
+        width: 500px;
+        overflow: visible;
+    }
+
+    .project1 img {
+        display: block;
+        width: 100%;
+        height: 300px;
+        
+    }
+    .overlay{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.75);
+        width: 100%;
+        height: 0;
+        transition: .5s ease;
+        overflow: hidden;
+    }
+    .project1:hover .overlay{
+        height: 100%;
+    }
+    .main-portfolio{
+        display: flex;
+        align-items: center;
+        justify-content:center ;
+        flex-direction: row;
+    }
+    .portfolio-content{
+        margin-left: -350px;
+        margin-right: 350px;
+    }
+    .portfolio-content2{
+        margin-right: 350px;
+    }
+    .overlay h1{
+        color: rgb(0, 234, 255);
+        text-align: center;
+        margin-top: 40px;
+    }
+    .overlay p{
+        font-size: 15px;
         margin-top: 30px;
+        text-align: center;
+    }
+    .container-portfolio .btn {
+        margin-left: 30px;
+        margin-top: 40px !important;
+        font-weight: 800;
+        font-size: 15px;
+        padding: 10px 30px !important;
+    }
+
+    .call-action{
+        margin-top: 200px;
+        border-top: 3px solid rgb(0, 234, 255);
+        border-bottom: 3px solid rgb(0, 234, 255);
+    }
+
+    .call-action h3{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: rgb(0, 234, 255);
+    }
+
+    .call-action h1{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 60px;
+    }
+    .call-action .btn{
+        margin-bottom: 20px;
+        font-weight: 800;
+        font-size: 12px;
+        padding: 10px 20px !important;
+    }
+
+    .contact .contact-info{
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
         margin-left: 30px;
     }
 
-    .work {
-        list-style-type: none;
+    .contact-us{
+        font-size: 50px;
+        margin-top: -30px;
     }
 
-    .work li {
-        font-size: 30px;
-        margin-left: 25%;
+    .d-grid .btn{
+        margin-left: 30px;
+    }
+
+    .fluid-container{
+        margin-top: -150px;
     }
 }
