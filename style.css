@@ -140,7 +140,8 @@
 
     #section2 {
         width: 100%;
-        height: 80vh;
+        height: 100vh;
+        padding-top: 10vh;
     }
 
     .about-me {
@@ -187,10 +188,12 @@
 
     #section3 {
         height: auto;
+        padding-top: 10vh;
     }
 
     .container-cards {
         flex-wrap: wrap;
+        margin-left: 5%;
     }
 
     .card-title {
@@ -205,6 +208,7 @@
 
     .container-cards2 {
         flex-wrap: wrap;
+        margin-left: 5%;
     }
 
     .card .fa-solid {
@@ -213,7 +217,7 @@
     }
 
     .container-service .m-5 {
-        margin: 1rem !important;
+        margin: 2rem !important;
     }
 
     .container-cards .card {
